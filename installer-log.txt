@@ -1,0 +1,134 @@
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP1 START @ 01:58:28
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+VERSION:	0.5.28
+PHP:		5.5.12 | SAPI: apache2handler
+SERVER:		Apache/2.4.9 (Win64) PHP/5.5.12
+DOC ROOT:	C:/wamp/www/WordPressRenier
+DOC ROOT 755:	true
+LOG FILE 644:	true
+BUILD NAME:	20151121_mipaginaweb_5650e1bf4d3f61056151121212727
+REQUEST URL:	http://localhost/WordPressRenier/installer.php
+
+********************************************************************************
+ARCHIVE SETUP
+********************************************************************************
+NAME:	20151121_mipaginaweb_5650e1bf4d3f61056151121212727_archive.zip
+SIZE:	16.11MB
+ZIP:	Enabled (ZipArchive Support)
+EXTRACTING
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2075
+    [filename] => C:\wamp\www\WordPressRenier\20151121_mipaginaweb_5650e1bf4d3f61056151121212727_archive.zip
+    [comment] => 
+)
+COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to .orig
+- Reset of .htaccess/web.config files
+
+UPDATED FILES:
+- SQL FILE:  'C:/wamp/www/WordPressRenier/installer-data.sql'
+- WP-CONFIG: 'C:/wamp/www/WordPressRenier/wp-config.php'
+
+ARCHIVE RUNTIME: 22.1785 sec.
+
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+--------------------------------------
+SERVER ENVIROMENT
+--------------------------------------
+MYSQL VERSION:	5.6.17
+TIMEOUT:	5000
+MAXPACK:	4194304
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+DROP TABLE:	
+QUERIES RAN:	551
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (1)
+wp_iframepopup: (3)
+wp_links: (0)
+wp_options: (154)
+wp_postmeta: (177)
+wp_posts: (79)
+wp_term_relationships: (46)
+wp_term_taxonomy: (25)
+wp_terms: (25)
+wp_usermeta: (24)
+wp_users: (1)
+Removed '21' cache/transient rows
+
+SECTION RUNTIME: 4.7475 sec.
+
+********************************************************************************
+STEP1 COMPLETE @ 01:58:55 - TOTAL RUNTIME: 26.9417 sec.
+********************************************************************************
+
+
+
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP2 START @ 02:00:34
+NOTICE: Do not post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	 utf8 
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments~ (1)
+wp_duplicator_packages^ (0)
+wp_iframepopup~ (3)
+wp_links^ (0)
+wp_options~ (132)
+wp_postmeta~ (177)
+wp_posts~ (79)
+wp_term_relationships~ (46)
+wp_term_taxonomy~ (25)
+wp_terms~ (25)
+wp_usermeta~ (24)
+wp_users~ (1)
+--------------------------------------
+SEARCH1:	'http://localhost/samsung' 
+REPLACE1:	'http://localhost/WordPressRenier' 
+SEARCH2:	'F:/wamp/www/samsung/' 
+REPLACE2:	'C:/wamp/www/WordPressRenier/' 
+SCANNED:	Tables:13 | Rows:513 | Cells:3604 
+UPDATED:	Tables:2 | Rows:90 |Cells:109 
+ERRORS:		0 
+RUNTIME:	0.492100 sec
+
+********************************************************************************
+START FINAL CLEANUP: 02:00:35
+********************************************************************************
+UPDATE `wp_blogs` SET domain = 'localhost' WHERE domain = 'localhost'
+
+--------------------------------------
+WARNINGS
+--------------------------------------
+No Warnings Found
+
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+created basic .htaccess file.  If using IIS web.config this process will need to be done manually.
+********************************************************************************
+STEP 2 COMPLETE @ 02:00:35 - TOTAL RUNTIME: 0.7534 sec.
+********************************************************************************
